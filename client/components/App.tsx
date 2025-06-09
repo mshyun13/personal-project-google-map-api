@@ -1,13 +1,13 @@
-import { useFruits } from '../hooks/useFruits.ts'
+import { Outlet } from "react-router"
 
 function App() {
-  const { data } = useFruits()
+  
 
   return (
     <>
       <div className="app">
-        <h1>Fullstack Boilerplate - with Fruits!</h1>
-        <ul>{data && data.map((fruit) => <li key={fruit}>{fruit}</li>)}</ul>
+        <h1>MukBang Log</h1>
+          <Outlet key={'app'}/>
       </div>
     </>
   )
