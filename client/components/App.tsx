@@ -1,13 +1,15 @@
-import { Outlet } from "react-router"
+import { Link, Outlet } from 'react-router'
+import Nav from './Nav'
+import Body from './Body'
 
 function App() {
-  
-
   return (
     <>
       <div className="app">
-        <h1>MukBang Log</h1>
-          <Outlet key={'app'}/>
+        <Link to={'/'}>MukBang Log</Link>
+        <Nav />
+        <Body />
+        <Outlet />
       </div>
     </>
   )
