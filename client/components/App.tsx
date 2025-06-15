@@ -1,15 +1,19 @@
 import { Link, Outlet } from 'react-router'
 import Nav from './Nav'
-import Body from './Body'
 
 function App() {
   return (
     <>
       <div className="app">
-        <Link to={'/'}>MukBang Log</Link>
-        <Nav />
-        <Body />
-        <Outlet />
+        <div className="title">
+          <Link to={'/'} className="titleText">
+            Your Log
+          </Link>
+        </div>
+        <div className="bodyContent">
+          <Nav />
+          <Outlet />
+        </div>
       </div>
     </>
   )

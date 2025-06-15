@@ -3,4 +3,61 @@
 html, 
 body {
   font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.app {
+  height: 100%;
+  flex: 1 1 auto;
+}
+
+.title {
+  background-color: white;
+  border-bottom: 5px solid #000035;
+  width: 100%;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.titleText {
+  text-decoration: none;
+  color: #000035;
+}
+
+.bodyContent {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.sideNav {
+  color: white;
+  height: 100%;
+  width: auto;
+  position: relative;
+  // z-index: 1;
+  // top: 0;
+  // left: 0;
+  background-color: #000035;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav_text {
+  text-decoration: none;
+  color: white;
+}
+
+.option_container {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #000035;
+}
+
+.option_text {
+  text-decoration: none;
 }
